@@ -1,9 +1,18 @@
-const names = require('./4-name')
-const sayHi = require('./5-utils')
-const data = require('./6-alternative-flavor')
-require('./7-mind-grenade')
 
+const os = require('os')
 
-// sayHi('susan')
-// sayHi(names.john)
-// sayHi(names.peter)
+//info about current user
+const user = os.userInfo()
+console.log(user)
+
+//methods returns the systme uptime in seconds
+console.log(`The system uptime is ${os.uptime} seconds`)
+
+const currentOs = {
+    name: os.type(),
+    release: os.release(),
+    totalMem: os.totalmem(),
+    freeMem: os.freemem(),
+}
+
+console.log(currentOs)
