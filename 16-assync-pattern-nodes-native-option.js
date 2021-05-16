@@ -24,6 +24,7 @@ const util = require('util')
 // .then((result) => console.log(result))
 // .catch((err) => console.log(err))
 
+//reading two file and writing a single file
 const start = async() => {
     try{
         const first = await readFile('./content/first.txt', 'utf8')
