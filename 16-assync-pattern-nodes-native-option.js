@@ -1,5 +1,5 @@
 const { readFile,writeFile } = require('fs').promises
-const util = require('util')
+// const util = require('util')
 
 //reading the file with promise
 // const readFilePromise = util.promisify(readFile)
