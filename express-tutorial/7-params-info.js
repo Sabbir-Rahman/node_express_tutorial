@@ -18,6 +18,7 @@ app.get('/api/products',(req,res)=>{
 
 })
 
+
 app.get('/api/products/:productId', (req,res)=>{
 
     const {productId} = req.params;
