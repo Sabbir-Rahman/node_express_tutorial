@@ -5,7 +5,11 @@ const logger = require('./9-logger')
 
 //req => middleware => res
 
+<<<<<<< HEAD
 app.use('/api',logger)
+=======
+app.use(logger)
+>>>>>>> 61216257021257a40c667cee83d754cb10d71c0e
 
 app.get('/',(req,res)=> {
     
